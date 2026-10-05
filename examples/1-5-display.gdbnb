@@ -12,12 +12,12 @@
     },
     {
       "kind": "code",
-      "value": "# step1.c を -gオプション付きでコンパイルし，gdb を起動する\n$ ",
+      "value": "# step1.c を -gオプション付きでコンパイルし，gdb を起動する\ngcc -g step1.c\ngdb -q ./a.out",
       "languageId": "shellscript"
     },
     {
       "kind": "code",
-      "value": "# main関数の先頭行にブレークポイントを設定し，実行を開始する\n(gdb) \n# displayコマンドで変数xの値を自動表示するようにする\n(gdb) \n# ブレーク後にstepコマンドを複数回使ってステップ実行する\n(gdb) ",
+      "value": "# main関数の先頭行にブレークポイントを設定し，実行を開始する\n(gdb) break main\n(gdb) run\n# displayコマンドで変数xの値を自動表示するようにする\n(gdb) display x \n# ブレーク後にstepコマンドを複数回使ってステップ実行する\n(gdb) step\n(gdb) step\n(gdb) step\n(gdb) quit\n",
       "languageId": "gdb_command"
     },
     {

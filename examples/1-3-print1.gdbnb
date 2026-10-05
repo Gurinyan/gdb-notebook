@@ -17,12 +17,12 @@
     },
     {
       "kind": "code",
-      "value": "# fact.c を -gオプション付きでコンパイルし，gdb を起動する\n$ ",
+      "value": "# fact.c を -gオプション付きでコンパイルし，gdb を起動する\ngcc -g fact.c\ngdb -q ./a.out",
       "languageId": "shellscript"
     },
     {
       "kind": "code",
-      "value": "# fact関数の先頭行にブレークポイントを設定し，実行を開始する\n(gdb) \n# ブレーク後に引数nの値を表示する\n(gdb) ",
+      "value": "# fact関数の先頭行にブレークポイントを設定し，実行を開始する\n(gdb) break fact\n(gdb) run\n# ブレーク後に引数nの値を表示する\n(gdb) print n",
       "languageId": "gdb_command"
     },
     {

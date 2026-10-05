@@ -12,12 +12,12 @@
     },
     {
       "kind": "code",
-      "value": "# fact.c を -gオプション付きでコンパイルし，gdb を起動する\n$ ",
+      "value": "# fact.c を -gオプション付きでコンパイルし，gdb を起動する\ngcc -g fact.c\ngdb -q ./a.out",
       "languageId": "shellscript"
     },
     {
       "kind": "code",
-      "value": "# fact関数の先頭行にブレークポイントを設定し，実行を開始する\n(gdb) \n# ブレーク後に実行を再開すると，再びfactの先頭行でブレークする\n(gdb) \n# 実行が終了するまで，繰り返し実行を再開する\n(gdb) ",
+      "value": "# fact関数の先頭行にブレークポイントを設定し，実行を開始する\n(gdb) break fact\n(gdb) run\n# ブレーク後に実行を再開すると，再びfactの先頭行でブレークする\n(gdb) continue\n# 実行が終了するまで，繰り返し実行を再開する\n(gdb) continue\n(gdb) continue\n(gdb) continue\n(gdb) continue\n(gdb) continue\n\n(gdb) quit",
       "languageId": "gdb_command"
     },
     {
